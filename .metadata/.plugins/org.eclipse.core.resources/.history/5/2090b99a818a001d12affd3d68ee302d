@@ -1,0 +1,34 @@
+package newapp;
+
+public class EmployeeApplication {
+
+	private static EmployeeOps ops = new EmployeeOps();
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void addEmpDetails(){
+		Employee employee = ops.getUserInput();
+		employee = ops.save(employee);
+		System.out.println("Entered Employee : "+employee);
+	}
+	
+	public static void updateEmpDetails(){
+		
+	}
+	
+	public static void getEmpDetails(){
+		
+	}
+
+	public static void deleteEmployee() {
+		
+	}
+	
+	public static void listEmploye() {
+		
+	}
+	
+	
+}

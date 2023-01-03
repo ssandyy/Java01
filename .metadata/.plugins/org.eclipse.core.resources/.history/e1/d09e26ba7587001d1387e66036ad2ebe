@@ -1,0 +1,11 @@
+package newapp;
+
+public class Employee {
+
+	private Integer empId;
+	private String name;
+	private Double salary;
+	
+	public void 
+}
+

@@ -1,0 +1,9 @@
+package newapp;
+
+public class Employee {
+
+	Integer id;
+	String name;
+	Double salary;
+	
+}

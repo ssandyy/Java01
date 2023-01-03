@@ -1,0 +1,45 @@
+package newapp;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Objects;
+
+public class DBHandler {
+	
+	private final String HOST = "localhost", PORT = "1521", USER = "System", PASSWORD = "manager", SCHEMA = "emp";
+	
+	private Connection connection;
+	private Statement statement;
+	private PreparedStatement preparedStatement;
+	
+	public void loadDriver() throws ClassNotFoundException {
+		Class.forName("orcale.jdbc.driver.OracleDriver");
+	}
+	
+	public Connection getConnection() {
+		// TODO
+		return null;
+	}
+	
+	public PreparedStatement prepareStatement(String query) {
+		// TODO
+		return null;
+	}
+	
+	public Statement createStatement() {
+		// TODO
+		return null;
+	}
+
+	public void closeResources() throws SQLException {
+		// TODO
+		
+		if(!Objects.isNull(statement)) {
+			statement.close();
+			statement = null;
+		}
+	}
+	
+}

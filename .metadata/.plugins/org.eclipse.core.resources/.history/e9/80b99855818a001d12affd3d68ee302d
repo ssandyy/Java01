@@ -1,0 +1,14 @@
+package newapp;
+
+public class EmployeeApplication {
+
+	private static EmployeeOps ops = new EmployeeOps();
+	
+	public static void main(String[] args) {
+		
+	}
+	public static void AddEmpDetails(){
+		
+	}
+
+}

@@ -1,0 +1,58 @@
+package newapp;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Objects;
+
+public class DBHandler {
+	
+	private final String HOST = "localhost", PORT = "1521", USER = "System", PASSWORD = "manager", SCHEMA = "emp";
+	private Connection connection;
+	private Statement statement;
+	private PreparedStatement preparedStatement;
+	
+	public DBHandler() {
+		this.loadDriver();
+	}
+	
+	public void loadDriver() throws ClassNotFoundException {
+		Class.forName("orcale.jdbc.driver.OracleDriver");
+	}
+	
+	public Connection getConnection() throws SQLException {
+		closeResources();
+		connection = DriverManager.getConnection("jdbc:oracle:thin:@"+HOST+":"+PORT+":xe", USER, PASSWORD);
+		return connection;
+	}
+	
+	public PreparedStatement prepareStatement(String query) throws SQLException {
+		getConnection();
+		preparedStatement = connection.prepareStatement("insert into SCHEMA values (?,?,?)");
+		return preparedStatement;
+	}
+	
+	public Statement createStatement() throws SQLException {
+		getConnection();
+		statement = connection.createStatement();
+		return statement;
+	}
+
+	public void closeResources() throws SQLException {
+		if(!Objects.isNull(statement)) {
+			statement.close();
+			statement = null;
+		}
+		if(!Objects.isNull(connection)) {
+			connection.close();
+			connection = null;
+		}
+		if(!Objects.isNull(preparedStatement)) {
+			preparedStatement.close();
+			preparedStatement = null;
+		}
+	}
+	
+}

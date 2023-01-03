@@ -1,0 +1,17 @@
+package newapp;
+
+public class EmployeeOps {
+
+	private DBHandler db;
+	
+	public EmployeeOps() {
+		try {
+			db = new DBHandler();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public 
+	
+}

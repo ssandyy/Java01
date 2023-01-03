@@ -1,0 +1,16 @@
+package jdbcapp;
+
+//Step1: Load driver
+//Step2: 
+
+
+public class statementwithscanner {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+//		Step1: Load driver
+		Class.forName("oracle.jabc.driver.DriverOracle");
+		
+		
+	}
+
+}

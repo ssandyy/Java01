@@ -1,0 +1,10 @@
+package jdbcapp;
+
+import newapp.DBHandler;
+
+public class preparestatementwithscanner {
+
+	public static void main(String[] args) {
+		DBHandler.loadDriver();
+}
+}

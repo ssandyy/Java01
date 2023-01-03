@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;newapp&apos; to &apos;newapp_crud&apos;&#x0D;&#x0A;- Original project: &apos;jdbcapp&apos;&#x0D;&#x0A;- Original element: &apos;jdbcapp/src/newapp&apos;&#x0D;&#x0A;- Renamed element: &apos;jdbcapp/src/newapp_crud&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;newapp&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;newapp" name="newapp_crud" qualified="false" references="true" stamp="1672674447762" textual="false" version="1.0"/>
+</session>

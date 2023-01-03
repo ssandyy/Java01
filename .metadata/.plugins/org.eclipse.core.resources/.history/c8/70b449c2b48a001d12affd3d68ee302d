@@ -1,0 +1,31 @@
+package newapp;
+
+public class Employee {
+
+	private Integer empId;
+	private String name;
+	private Double salary;
+	
+	public void setEmpId(Integer empId)
+	{
+		this.empId= empId;
+	}
+	public Integer getEmpId() {
+		return this.empId;
+	}
+	
+	public void setName(String name) {
+		this.name=name;
+	}
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+	public Double getSalary() {
+		return this.salary;
+	}
+}
+

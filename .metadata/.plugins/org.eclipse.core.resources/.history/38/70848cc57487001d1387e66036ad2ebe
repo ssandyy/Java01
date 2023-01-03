@@ -1,0 +1,60 @@
+package newapp;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class EmployeeOps {
+
+	private DBHandler db;
+	
+	public EmployeeOps() {
+		try {
+			db = new DBHandler();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public Employee getUserInput() {
+		
+		try(Scanner sc = new Scanner(System.in);)
+		{	
+			System.out.println("Enter employee-id (integer): ");
+			int empid = sc.nextInt();
+			System.out.println("Enter employee name (String): ");
+			String ename = sc.next();
+			System.out.println("Enter employee salary (Integer): ");
+			double esalary = sc.nextDouble();
+	}catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			return ;
+		}
+	}
+	
+	public Employee save(Employee employee) {
+		// TODO
+		return null;
+	}
+	
+	public EmployeeUpdate(Employee empid) {
+		
+		return null;
+	}
+	
+	public void delete(Integer id) {
+
+		// TODO
+	}
+	
+	public Employee retrieve(Integer id) {
+		// TODO
+		return null;
+	}
+	
+	public List<Employee> list(){
+		// TODO
+		return null;
+	}
+}

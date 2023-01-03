@@ -1,0 +1,9 @@
+package com.tcs.client;
+
+public class Hellopkg {
+	static int z = 10;
+	public static void main(String[] args) {
+		System.out.println(z);
+	}
+
+}

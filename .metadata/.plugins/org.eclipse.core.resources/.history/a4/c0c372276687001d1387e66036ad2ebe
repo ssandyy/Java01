@@ -1,0 +1,15 @@
+package jdbcapp;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class preparestatementwithscanner {
+
+	public static void main(String[] args) {
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection connection = DriverManager.getConnection("oracle:jdbc:thin:@localhost:1521:xe", "system","manager");
+	
+
+	}
+
+}

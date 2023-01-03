@@ -1,0 +1,10 @@
+package jdbcapp;
+
+public class firstconnection {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		System.out.println("Driver loading process completed..!");
+	}
+
+}

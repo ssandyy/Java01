@@ -1,0 +1,11 @@
+package newapp;
+
+public class EmployeeOps {
+
+	private DBHandler db;
+	
+	public EmployeeOps() {
+		db = new DBHandler();
+	}
+	
+}

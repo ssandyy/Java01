@@ -1,0 +1,32 @@
+package newapp;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+
+public class DBHandler {
+	
+	public void loadDriver() {
+		// TODO
+	}
+	
+	public Connection getConnection() {
+		// TODO
+		return null;
+	}
+	
+	public PreparedStatement prepareStatement(String query) {
+		// TODO
+		return null;
+	}
+	
+	public Statement createStatement() {
+		// TODO
+		return null;
+	}
+
+	public void closeResources() {
+		// TODO
+	}
+	
+}
