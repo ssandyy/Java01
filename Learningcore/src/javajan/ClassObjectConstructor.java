@@ -153,6 +153,7 @@ package javajan;
 //202
 
 
+//=========================  Copy Constructor  ==========================
 class Student{
 	String name;
 	int age;
@@ -164,18 +165,38 @@ class Student{
 		System.out.println(this.age);
 	}
 	
-	// =========================  Constructor  ==========================
-	Student(String name, int age){
-		this.name = name;
-		this.age = age;
+	Student(Student studentTwo){
+		this.name = studentTwo.name;
+		this.age = studentTwo.age;
 		System.out.println(this.name);
 		System.out.println(this.age);
 	}
+	Student(){}
 }
 
 public class ClassObjectConstructor {
 	public static void main(String[] args) {
-		Student studentOne = new Student("Hanu", 501);
+		Student studentOne = new Student();
 		studentOne.studentDetails("Ram", 202);
+		
+		Student studentTwo = new Student(studentOne);
+		
+		Student studentThree = new Student(studentOne);
+		Student studentFour = new Student(studentOne);
+		Student studentFive = new Student(studentOne);
+		
 	}
 }
+
+
+//O/P
+//Ram
+//202
+//Ram
+//202
+//Ram
+//202
+//Ram
+//202
+//Ram
+//202
