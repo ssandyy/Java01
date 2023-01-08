@@ -181,8 +181,8 @@ public class ClassObjectConstructor {
 		
 		Student studentTwo = new Student(studentOne);
 		
-		Student studentThree = new Student(studentOne);
-		Student studentFour = new Student(studentOne);
+		Student studentThree = new Student(studentTwo);
+		Student studentFour = new Student(studentOne);  // Copy constructor
 		Student studentFive = new Student(studentOne);
 		
 	}
