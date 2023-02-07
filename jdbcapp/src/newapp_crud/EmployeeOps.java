@@ -21,24 +21,26 @@ public class EmployeeOps {
 	}
 
 	public Integer getIdFromUser() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter employee-id (integer): ");
-		int empId = sc.nextInt();
-		return empId;
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter employee-id (integer): ");
+			int empId = sc.nextInt();
+			return empId;
+		}
 	}
 
 	public Employee getUserInput() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter employee name (String): ");
-		String eName = sc.next();
-		System.out.println("Enter employee salary (Integer): ");
-		double eSalary = sc.nextDouble();
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter employee name (String): ");
+			String eName = sc.next();
+			System.out.println("Enter employee salary (Integer): ");
+			double eSalary = sc.nextDouble();
 
-		Employee emp = new Employee();
-		emp.setName(eName);
-		emp.setSalary(eSalary);
+			Employee emp = new Employee();
+			emp.setName(eName);
+			emp.setSalary(eSalary);
 
-		return emp;
+			return emp;
+		}
 	}
 
 	public Employee save(Employee employee) throws SQLException {

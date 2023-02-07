@@ -1,9 +1,0 @@
-package jdbcapp;
-
-public class statementwithscanner {
-
-	public static void main(String[] args) {
-		
-	}
-
-}
