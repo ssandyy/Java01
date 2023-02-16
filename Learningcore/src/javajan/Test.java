@@ -6,7 +6,6 @@ public class Test {
     
     public static void main(String[] args) {
         Test.simpleArray(); 
-        minMaxArrayElement();
     }
 
 
@@ -20,13 +19,10 @@ public class Test {
         for(int i = 0; i<array_size;i++){
             System.out.println("Enter your array elements: ");
             array[i] = sc.nextInt();
-        }
+        }   
         for (int i=0; i<array_size; i++){
             System.out.print(array[i] +",");
         }
         sc.close();
-    }
-
-
-     
+    }    
 }

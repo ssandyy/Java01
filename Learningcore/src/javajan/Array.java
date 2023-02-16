@@ -1,4 +1,5 @@
 package javajan;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array {
@@ -79,6 +80,7 @@ public class Array {
         }
         int minimum = Integer.MIN_VALUE;
         int maximum = Integer.MAX_VALUE;
+		// int minimum, maximum = 0;
 
         for(int i=0; i<array.length; i++ ){
             if(array[i]<minimum){
@@ -88,8 +90,12 @@ public class Array {
                 maximum = array[i];
             }
         }
-        System.out.println("\n Minimum value number in array element is : "+minimum);
+        System.out.println("\nMinimum value number in array element is : "+minimum); 
         System.out.println("Maximum value number in array element is : "+maximum);
+
+		Arrays.sort(array);
+		System.out.println("Minimum element value of array is: "+ array[0]);
+		System.out.println("Maximum element value of array is :" +array[array.length-1]);
 
         sc.close();
     }
