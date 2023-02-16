@@ -60,12 +60,47 @@ public class Array {
 		}
 		
 	}
+
+	//Question: find minimum and maximum value in an array 
+    public static void minMaxArrayElement(){
+        System.out.println("Enter your array length: ");
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int array[] = new int[size];
+         
+
+        System.out.println("Enter your " +size+ " array elements : ");
+        for(int i=0; i<size; i++){
+            array[i] = sc.nextInt();
+        }
+        System.out.print("your array elements are :");
+        for (int i=0; i <array.length; i++){
+            System.out.print(array[i]+ ",");
+        }
+        int minimum = Integer.MIN_VALUE;
+        int maximum = Integer.MAX_VALUE;
+
+        for(int i=0; i<array.length; i++ ){
+            if(array[i]<minimum){
+                minimum = array[i];
+            }
+            if(array[i]>maximum){
+                maximum = array[i];
+            }
+        }
+        System.out.println("\n Minimum value number in array element is : "+minimum);
+        System.out.println("Maximum value number in array element is : "+maximum);
+
+        sc.close();
+    }
 	
 	public static void main(String[] args) {
 //		Array.simpleArray();  // since simple array is under static block so we can call it using class name 
 		System.out.println("--------------Thank you !!--------------");
 //		Array.userInputArray();
 		System.out.println("--------------Thank you !!--------------");
-		Array.arrayInputIndex();
+		// Array.arrayInputIndex();
+		System.out.println("--------------Thank you !!--------------");
+		Array.minMaxArrayElement();
 	}
 }
