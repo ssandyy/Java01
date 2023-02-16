@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Array",
+            "request": "launch",
+            "mainClass": "javajan.Array",
+            "projectName": "Learningcore"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootTodoAppApplication<springboot-todo-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ssandyyspring.springboottodoapp.SpringbootTodoAppApplication",
+            "projectName": "springboot-todo-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

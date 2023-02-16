@@ -2,4 +2,8 @@
 <section name="Workbench">
 	<section name="PreferencesImportWizard">
 	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>

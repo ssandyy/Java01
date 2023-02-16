@@ -10,7 +10,6 @@ public class Array {
 		salary[3] = 10000;
 		salary[4] = 50000;
 		for(int i=0; i<salary.length;i++) { 
-			  
 			System.out.println(salary[i]);
 		}
 	}
@@ -56,6 +55,7 @@ public class Array {
 				break;
 			}else {
 			System.out.println("Sorry, your searched input is not available in Array..!");
+			break;
 			}
 		}
 		
