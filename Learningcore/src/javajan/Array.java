@@ -99,6 +99,8 @@ public class Array {
 
         sc.close();
     }
+
+	
 	
 	public static void main(String[] args) {
 //		Array.simpleArray();  // since simple array is under static block so we can call it using class name 

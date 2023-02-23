@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Strings",
+            "request": "launch",
+            "mainClass": "javajan.Strings",
+            "projectName": "Learningcore"
+        },
+        {
+            "type": "java",
             "name": "Launch Test",
             "request": "launch",
             "mainClass": "javajan.Test",
