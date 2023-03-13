@@ -47,7 +47,7 @@ valueOf()	Returns the string representation of the specified value	-> String
 
 public class Strings {
     public static void main(String[] args) {
-        String name1 = "Sandy";
+        String name1 = "     Sandy Kr    ";
         String name2 = "bawa";
         String name3 = "Ji";
 
@@ -64,20 +64,31 @@ public class Strings {
         System.out.println(name1.charAt(3)); //O/P: S
 
         //compareTo
-        System.out.println(name1.compareTo(name2));  //O/p: -21 (because its false and its indecate string value gap)
-
+        System.out.println("compareTo()   --> " +name1.compareTo(name2));  //O/p: -21 (because its false and its indecate string value gap)
         
 
         //contains() -> to search element
-        System.out.println(name1.contains("sandy")); // False
-        System.out.println(name1.contains("Sandy")); // True
-        System.out.println(name1.contains("bawa")); // False
+        System.out.println("contains() ->"+name1.contains("sandy")); // False
+        System.out.println("contains() ->"+name1.contains("Sandy")); // True
+        System.out.println("contains() ->"+name1.contains("bawa")); // False
         
         // endsWith() -> to check the end element in string
-        System.out.println(name3.endsWith("i")); // true : name3=Ji which is ending with 'i'
-        System.out.println(name3.endsWith("x")); // false : name3=Ji which is not ending with 'x'
+        System.out.println("endsWith() ->"+name3.endsWith("i")); // true : name3=Ji which is ending with 'i'
+        System.out.println("endsWith() ->"+name3.endsWith("x")); // false : name3=Ji which is not ending with 'x'
 
         // equals()
-        System.out.println();
+        System.out.println("equals() -->"+name2.equals(name1));
+
+        System.out.println(name1.length());
+        System.out.println(name1.isBlank());
+        System.out.println(name1.isEmpty());
+        System.out.println(name1.toUpperCase());
+        System.out.println(name1.startsWith("he"));
+        System.out.println(name1.replace("y", "eep"));
+        System.out.println(name1.trim());
+        System.out.println(name1.trim().length());
+        System.out.println(name1.strip());
+        System.out.println(name1.strip().length());
+        System.out.println(name1.substring(0,4));
     }
 }
