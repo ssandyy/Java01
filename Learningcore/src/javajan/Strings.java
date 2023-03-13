@@ -1,5 +1,7 @@
 package javajan;
 
+import java.util.Arrays;
+
 /*
 -------------------------------------------------
 charAt()	Returns the character at the specified index (position) -> char
@@ -86,9 +88,24 @@ public class Strings {
         System.out.println(name1.startsWith("he"));
         System.out.println(name1.replace("y", "eep"));
         System.out.println(name1.trim());
-        System.out.println(name1.trim().length());
-        System.out.println(name1.strip());
-        System.out.println(name1.strip().length());
-        System.out.println(name1.substring(0,4));
+        System.out.println(name1.trim().length()); //16 
+        System.out.println(name1.strip());  // Mr.     Sandy Kr
+        System.out.println(name1.strip().length());  //16
+        System.out.println(name1.substring(0,4));   // Mr.
+        System.out.println(Arrays.toString(name1.toCharArray()));      // [M, r, .,  ,  ,  ,  ,  , S, a, n, d, y,  , K, r,  ,  ,  ,  ]
+        System.out.println(name1.split("y"));
+        System.out.println("Arrays.toString" + Arrays.toString(name1.split("y")));
+        
+        
+        String name4 = "Sandy";
+        String name5 = new String("Sandy");
+        String name6 = "sandy";
+        System.out.println(name4.equals(name5)); //true  
+        System.out.println(name4 == name5);    // false
+        System.out.println(name4.equals(name6));  // false
+        System.out.println(name4.equalsIgnoreCase(name6)); // true
+
+
+
     }
 }
