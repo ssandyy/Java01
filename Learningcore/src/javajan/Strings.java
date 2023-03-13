@@ -92,7 +92,7 @@ public class Strings {
         System.out.println(name1.strip());  // Mr.     Sandy Kr
         System.out.println(name1.strip().length());  //16
         System.out.println(name1.substring(0,4));   // Mr.
-        System.out.println(Arrays.toString(name1.toCharArray()));      // [M, r, .,  ,  ,  ,  ,  , S, a, n, d, y,  , K, r,  ,  ,  ,  ]
+        System.out.println("Arrays.toString(name1.toCharArray())" + Arrays.toString(name1.toCharArray()));      // [M, r, .,  ,  ,  ,  ,  , S, a, n, d, y,  , K, r,  ,  ,  ,  ]
         System.out.println(name1.split("y"));
         System.out.println("Arrays.toString" + Arrays.toString(name1.split("y")));
         
@@ -104,8 +104,6 @@ public class Strings {
         System.out.println(name4 == name5);    // false
         System.out.println(name4.equals(name6));  // false
         System.out.println(name4.equalsIgnoreCase(name6)); // true
-
-
 
     }
 }
