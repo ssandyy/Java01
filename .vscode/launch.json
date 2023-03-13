@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringFormatting",
+            "request": "launch",
+            "mainClass": "javajan.StringFormatting",
+            "projectName": "Learningcore"
+        },
+        {
+            "type": "java",
             "name": "EscapeSequence",
             "request": "launch",
             "mainClass": "javajan.EscapeSequence",
