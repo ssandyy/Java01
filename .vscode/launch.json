@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Constructors",
+            "request": "launch",
+            "mainClass": "javajan.Opps.Constructors",
+            "projectName": "Learningcore"
+        },
+        {
+            "type": "java",
+            "name": "ArraySearchCharacter",
+            "request": "launch",
+            "mainClass": "ArraySearchCharacter",
+            "projectName": "Learningcore"
+        },
+        {
+            "type": "java",
             "name": "RegularExpression",
             "request": "launch",
             "mainClass": "javajan.RegularExpression",
