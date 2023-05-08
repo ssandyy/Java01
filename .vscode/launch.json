@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Polymorphism",
+            "request": "launch",
+            "mainClass": "javajan.Opps.Polymorphism",
+            "projectName": "Learningcore"
+        },
+        {
+            "type": "java",
             "name": "Constructors",
             "request": "launch",
             "mainClass": "javajan.Opps.Constructors",
